@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalendarHeaderView: UICollectionReusableView {
-    @IBOutlet weak var titleLabel: UILabel!
+class DayHeaderView: UICollectionReusableView {
+    @IBOutlet weak var dayLabel: UILabel!
     
 }

@@ -38,16 +38,27 @@ class CalendarViewController: UIViewController {
         }()
     
     let time = Time(startHour: 7, intervalMinutes: 30, endHour: 21)
+    let transitionDelegate: TransitioningDelegate = TransitioningDelegate()
+    var goToDetail = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appdelegate.shouldRotate = false
+        
+        // Force the device in landscape mode when the view controller gets loaded
+        UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeRight.rawValue, forKey: "orientation")
+        
+        
         sapporo.delegate = self
         sapporo.registerNibForClass(CalendarEventCell)
-        sapporo.registerNibForSupplementaryClass(CalendarHeaderView.self, kind: CalendarHeaderType.Day.rawValue)
-        sapporo.registerNibForSupplementaryClass(CalendarHeaderView.self, kind: CalendarHeaderType.Hour.rawValue)
+        sapporo.registerNibForSupplementaryClass(DayHeaderView.self, kind: CalendarHeaderType.Day.rawValue)
+        sapporo.registerNibForSupplementaryClass(HourHeaderView.self, kind: CalendarHeaderType.Hour.rawValue)
         
         
         print("Tiempos: \(time.timeRepresentations)")
+        
         
         let layout = CalendarLayout()
         sapporo.setLayout(layout)
@@ -59,7 +70,7 @@ class CalendarViewController: UIViewController {
             
             let randomDay = Int(arc4random_uniform(7))
             let randomStartHour = Int(arc4random_uniform(20))
-            let randomDuration = Int(arc4random_uniform(5) + 1)
+            let randomDuration = Int(arc4random_uniform(3) + 2)
             let randomFinishtHour = randomStartHour + randomDuration
             
             print("Materia: \(materia)")
@@ -76,56 +87,94 @@ class CalendarViewController: UIViewController {
             let event = randomEvent()
             return CalendarEventCellModel(event: event) { _ in
                 print("Materia seleccionada: \(event.materia)")
+                
+                let detailViewController = DetailViewController()
+                detailViewController.event = event
+                //detailViewController.colorArray = cell.gradientLayer?.colors
+                //detailViewController.transitioningDelegate = transitionDelegate
+                detailViewController.modalPresentationStyle = .Popover
+                self.presentViewController(detailViewController, animated: true, completion: nil)
+                self.goToDetail = true
+                
             }
         }
         
         sapporo[0].append(cellmodels)
         sapporo.bump()
         
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        // Lock autorotate
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.LandscapeRight, UIInterfaceOrientationMask.LandscapeLeft]
+    }
+    
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         
+        // Only allow Landscape
+        return UIInterfaceOrientation.LandscapeRight
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        if !goToDetail {
+            let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appdelegate.shouldRotate = true
+        } else {
+            // Volvemos al valor original
+            goToDetail = false
+        }
         
     }
+    
 }
 
 extension CalendarViewController: SapporoDelegate {
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         if kind == CalendarHeaderType.Day.rawValue {
-            let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: CalendarHeaderView.reuseIdentifier, forIndexPath: indexPath) as! CalendarHeaderView
+            let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: DayHeaderView.reuseIdentifier, forIndexPath: indexPath) as! DayHeaderView
             
             switch (indexPath.item)
             {
             case 0:
-                view.titleLabel.text = "Lunes"
+                view.dayLabel.text = "Lunes"
                 
             case 1:
-                view.titleLabel.text = "Martes"
+                view.dayLabel.text = "Martes"
                 
             case 2:
-                view.titleLabel.text = "Miercoles"
+                view.dayLabel.text = "Miercoles"
                 
             case 3:
-                view.titleLabel.text = "Jueves"
+                view.dayLabel.text = "Jueves"
                 
             case 4:
-                view.titleLabel.text = "Viernes"
+                view.dayLabel.text = "Viernes"
                 
             case 5:
-                view.titleLabel.text = "Sabado"
+                view.dayLabel.text = "Sabado"
                 
             default:
-                view.titleLabel.text = "Domingo"
+                view.dayLabel.text = "Domingo"
             }
+            
+            view.layer.borderColor = UIColor.whiteColor().CGColor
+            view.layer.borderWidth = 1
             
             
             return view
         }
         
-        let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: CalendarHeaderView.reuseIdentifier, forIndexPath: indexPath) as! CalendarHeaderView
+        let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: HourHeaderView.reuseIdentifier, forIndexPath: indexPath) as! HourHeaderView
         
         if indexPath.item < self.time.timeRepresentations.count {
-            view.titleLabel.text = self.time.timeRepresentations[indexPath.item]
-            view.layer.borderColor = UIColor.whiteColor().CGColor
-            view.layer.borderWidth = 2
+            view.hourLabel.text = self.time.timeRepresentations[indexPath.item]
+            //view.layer.borderColor = UIColor.whiteColor().CGColor
+            //view.layer.borderWidth = 2
         }
         
         

@@ -13,10 +13,17 @@
 		2797FB9E1C7CF9D700D2BF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2797FB9D1C7CF9D700D2BF9C /* Assets.xcassets */; };
 		2797FBA11C7CF9D700D2BF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797FB9F1C7CF9D700D2BF9C /* LaunchScreen.storyboard */; };
 		2797FBAA1C7CFA4300D2BF9C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797FBA91C7CFA4300D2BF9C /* CalendarViewController.swift */; };
-		279BD2621C7D019000B75A98 /* CalendarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279BD2611C7D019000B75A98 /* CalendarHeaderView.xib */; };
+		279BD2621C7D019000B75A98 /* DayHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279BD2611C7D019000B75A98 /* DayHeaderView.xib */; };
 		279BD2641C7D025D00B75A98 /* CalendarEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279BD2631C7D025D00B75A98 /* CalendarEventCell.xib */; };
 		279BD2661C7D125600B75A98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BD2651C7D125600B75A98 /* ViewController.swift */; };
-		27F3EAD71C7CFB980094DF95 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3EAD61C7CFB980094DF95 /* CalendarHeaderView.swift */; };
+		279BD2681C7E084200B75A98 /* HourHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279BD2671C7E084200B75A98 /* HourHeaderView.xib */; };
+		279BD26A1C7E091200B75A98 /* HourHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BD2691C7E091200B75A98 /* HourHeaderView.swift */; };
+		279BD26D1C7E3AFB00B75A98 /* TransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BD26C1C7E3AFB00B75A98 /* TransitioningDelegate.swift */; };
+		279BD26F1C7E3C1500B75A98 /* PresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BD26E1C7E3C1500B75A98 /* PresentationAnimator.swift */; };
+		279BD2711C7E3CB500B75A98 /* DismissalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BD2701C7E3CB500B75A98 /* DismissalAnimator.swift */; };
+		279BD2731C7E3D5500B75A98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BD2721C7E3D5500B75A98 /* DetailViewController.swift */; };
+		279BD2771C7E46EA00B75A98 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279BD2761C7E46EA00B75A98 /* DetailView.xib */; };
+		27F3EAD71C7CFB980094DF95 /* DayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3EAD61C7CFB980094DF95 /* DayHeaderView.swift */; };
 		27F3EAD91C7CFBC10094DF95 /* CalendarEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3EAD81C7CFBC10094DF95 /* CalendarEventCell.swift */; };
 		27F3EADB1C7CFBD90094DF95 /* CalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3EADA1C7CFBD90094DF95 /* CalendarLayout.swift */; };
 		27F3EADD1C7CFBF20094DF95 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3EADC1C7CFBF20094DF95 /* CalendarEvent.swift */; };
@@ -33,10 +40,17 @@
 		2797FBA01C7CF9D700D2BF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2797FBA21C7CF9D700D2BF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2797FBA91C7CFA4300D2BF9C /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		279BD2611C7D019000B75A98 /* CalendarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarHeaderView.xib; sourceTree = "<group>"; };
+		279BD2611C7D019000B75A98 /* DayHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayHeaderView.xib; sourceTree = "<group>"; };
 		279BD2631C7D025D00B75A98 /* CalendarEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarEventCell.xib; sourceTree = "<group>"; };
 		279BD2651C7D125600B75A98 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		27F3EAD61C7CFB980094DF95 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		279BD2671C7E084200B75A98 /* HourHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HourHeaderView.xib; sourceTree = "<group>"; };
+		279BD2691C7E091200B75A98 /* HourHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourHeaderView.swift; sourceTree = "<group>"; };
+		279BD26C1C7E3AFB00B75A98 /* TransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitioningDelegate.swift; sourceTree = "<group>"; };
+		279BD26E1C7E3C1500B75A98 /* PresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationAnimator.swift; sourceTree = "<group>"; };
+		279BD2701C7E3CB500B75A98 /* DismissalAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissalAnimator.swift; sourceTree = "<group>"; };
+		279BD2721C7E3D5500B75A98 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		279BD2761C7E46EA00B75A98 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		27F3EAD61C7CFB980094DF95 /* DayHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHeaderView.swift; sourceTree = "<group>"; };
 		27F3EAD81C7CFBC10094DF95 /* CalendarEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEventCell.swift; sourceTree = "<group>"; };
 		27F3EADA1C7CFBD90094DF95 /* CalendarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarLayout.swift; sourceTree = "<group>"; };
 		27F3EADC1C7CFBF20094DF95 /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
@@ -77,8 +91,8 @@
 		2797FB951C7CF9D700D2BF9C /* Calendario Clases */ = {
 			isa = PBXGroup;
 			children = (
-				2797FBA81C7CFA1700D2BF9C /* Calendario */,
 				2797FB961C7CF9D700D2BF9C /* AppDelegate.swift */,
+				2797FBA81C7CFA1700D2BF9C /* Calendario */,
 				2797FB9A1C7CF9D700D2BF9C /* Main.storyboard */,
 				2797FB9D1C7CF9D700D2BF9C /* Assets.xcassets */,
 				2797FB9F1C7CF9D700D2BF9C /* LaunchScreen.storyboard */,
@@ -92,15 +106,30 @@
 		2797FBA81C7CFA1700D2BF9C /* Calendario */ = {
 			isa = PBXGroup;
 			children = (
+				279BD26B1C7E3AE400B75A98 /* Detalle */,
 				2797FBA91C7CFA4300D2BF9C /* CalendarViewController.swift */,
-				27F3EAD61C7CFB980094DF95 /* CalendarHeaderView.swift */,
-				279BD2611C7D019000B75A98 /* CalendarHeaderView.xib */,
+				27F3EAD61C7CFB980094DF95 /* DayHeaderView.swift */,
+				279BD2611C7D019000B75A98 /* DayHeaderView.xib */,
+				279BD2691C7E091200B75A98 /* HourHeaderView.swift */,
+				279BD2671C7E084200B75A98 /* HourHeaderView.xib */,
 				27F3EAD81C7CFBC10094DF95 /* CalendarEventCell.swift */,
 				279BD2631C7D025D00B75A98 /* CalendarEventCell.xib */,
 				27F3EADA1C7CFBD90094DF95 /* CalendarLayout.swift */,
 				27F3EADC1C7CFBF20094DF95 /* CalendarEvent.swift */,
 			);
 			name = Calendario;
+			sourceTree = "<group>";
+		};
+		279BD26B1C7E3AE400B75A98 /* Detalle */ = {
+			isa = PBXGroup;
+			children = (
+				279BD26C1C7E3AFB00B75A98 /* TransitioningDelegate.swift */,
+				279BD26E1C7E3C1500B75A98 /* PresentationAnimator.swift */,
+				279BD2701C7E3CB500B75A98 /* DismissalAnimator.swift */,
+				279BD2721C7E3D5500B75A98 /* DetailViewController.swift */,
+				279BD2761C7E46EA00B75A98 /* DetailView.xib */,
+			);
+			name = Detalle;
 			sourceTree = "<group>";
 		};
 		98C01E34834BDB1FB014FC26 /* Frameworks */ = {
@@ -183,9 +212,11 @@
 			files = (
 				2797FBA11C7CF9D700D2BF9C /* LaunchScreen.storyboard in Resources */,
 				279BD2641C7D025D00B75A98 /* CalendarEventCell.xib in Resources */,
-				279BD2621C7D019000B75A98 /* CalendarHeaderView.xib in Resources */,
+				279BD2621C7D019000B75A98 /* DayHeaderView.xib in Resources */,
 				2797FB9E1C7CF9D700D2BF9C /* Assets.xcassets in Resources */,
 				2797FB9C1C7CF9D700D2BF9C /* Main.storyboard in Resources */,
+				279BD2681C7E084200B75A98 /* HourHeaderView.xib in Resources */,
+				279BD2771C7E46EA00B75A98 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,13 +275,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279BD2731C7E3D5500B75A98 /* DetailViewController.swift in Sources */,
+				279BD26D1C7E3AFB00B75A98 /* TransitioningDelegate.swift in Sources */,
 				272C043A1C7CFF450078906F /* TimeInterval.swift in Sources */,
 				2797FBAA1C7CFA4300D2BF9C /* CalendarViewController.swift in Sources */,
-				27F3EAD71C7CFB980094DF95 /* CalendarHeaderView.swift in Sources */,
+				27F3EAD71C7CFB980094DF95 /* DayHeaderView.swift in Sources */,
+				279BD26F1C7E3C1500B75A98 /* PresentationAnimator.swift in Sources */,
 				27F3EAD91C7CFBC10094DF95 /* CalendarEventCell.swift in Sources */,
 				27F3EADB1C7CFBD90094DF95 /* CalendarLayout.swift in Sources */,
+				279BD26A1C7E091200B75A98 /* HourHeaderView.swift in Sources */,
 				27F3EADD1C7CFBF20094DF95 /* CalendarEvent.swift in Sources */,
 				279BD2661C7D125600B75A98 /* ViewController.swift in Sources */,
+				279BD2711C7E3CB500B75A98 /* DismissalAnimator.swift in Sources */,
 				2797FB971C7CF9D700D2BF9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

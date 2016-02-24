@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E33e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="n2N-Hb-J5X" customClass="HourHeaderView" customModule="Calendario_Clases" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHD-Om-yOh" userLabel="Hour">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
+                    <color key="backgroundColor" red="0.127942099" green="0.24640413210000001" blue="0.84097268650000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.127942099" green="0.24640413210000001" blue="0.84097268650000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KHD-Om-yOh" secondAttribute="bottom" constant="39" id="3xM-uF-BYS"/>
+                <constraint firstAttribute="trailing" secondItem="KHD-Om-yOh" secondAttribute="trailing" id="Rmu-Zd-rNF"/>
+                <constraint firstItem="KHD-Om-yOh" firstAttribute="leading" secondItem="n2N-Hb-J5X" secondAttribute="leading" id="S8m-12-Hti"/>
+                <constraint firstItem="KHD-Om-yOh" firstAttribute="top" secondItem="n2N-Hb-J5X" secondAttribute="top" id="zR4-bB-SlD"/>
+            </constraints>
+            <connections>
+                <outlet property="hourLabel" destination="KHD-Om-yOh" id="1Q9-Jr-coX"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="139"/>
+        </collectionReusableView>
+    </objects>
+</document>

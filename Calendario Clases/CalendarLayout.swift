@@ -12,8 +12,8 @@ import Sapporo
 let DaysPerWeek         : CGFloat = 6
 let HoursPerDay         : CGFloat = 29
 let HorizontalSpacing   : CGFloat = 10
-let HeightPerHour       : CGFloat = 50
-let DayHeaderHeight     : CGFloat = 60
+let HeightPerHour       : CGFloat = 60
+let DayHeaderHeight     : CGFloat = 30
 let HourHeaderWidth     : CGFloat = 100
 
 class CalendarLayout: SALayout {
@@ -75,7 +75,7 @@ class CalendarLayout: SALayout {
             //print("Rectangulo: x: \(HourHeaderWidth + (widthPerDay * CGFloat(indexPath.item))) y: \(0)")
             
         } else if elementKind == CalendarHeaderType.Hour.rawValue {
-            attributes.frame = CGRectMake(0, DayHeaderHeight + HeightPerHour * CGFloat(indexPath.item), HourHeaderWidth, DayHeaderHeight)
+            attributes.frame = CGRectMake(0, DayHeaderHeight + HeightPerHour * CGFloat(indexPath.item), HourHeaderWidth, HeightPerHour)
             attributes.zIndex = -10
             
             //print("Rectangulo: x: \(0) y: \(DayHeaderHeight + HeightPerHour * CGFloat(indexPath.item))")
