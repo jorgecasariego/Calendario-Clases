@@ -1,0 +1,20 @@
+PODS:
+  - Sapporo (0.1.6)
+
+DEPENDENCIES:
+  - Sapporo (from `https://github.com/nghialv/Sapporo.git`, branch `swift2.0`)
+
+EXTERNAL SOURCES:
+  Sapporo:
+    :branch: swift2.0
+    :git: https://github.com/nghialv/Sapporo.git
+
+CHECKOUT OPTIONS:
+  Sapporo:
+    :commit: 273d524056b86c1b91f041546cb7555592c6594f
+    :git: https://github.com/nghialv/Sapporo.git
+
+SPEC CHECKSUMS:
+  Sapporo: 75998ae2810c458fe07818af232a28e0747be0ce
+
+COCOAPODS: 0.39.0

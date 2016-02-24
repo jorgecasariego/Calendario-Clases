@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01723F37F41C82B74312C036B17BB423 /* Pods-Calendario Clases-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1300340120D83D4A25C2DA8FBACA098 /* Pods-Calendario Clases-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		029B6B3D7628DAC97543649CD851AF97 /* Sapporo+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33CB278F0FF4216B6797AA5CFF71E2 /* Sapporo+DataSource.swift */; };
+		0317876DB9B8E4EF8A1764FA9E43FA38 /* SACellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B90A33EBC2229038E858235B4893CB /* SACellModel.swift */; };
+		049E9D0F995E353E557443EDD307E5BD /* SASection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DCF532680B38D4ED389A0FE8214DF /* SASection.swift */; };
+		145438F1CB658C41E162F145193B5C2B /* SapporoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF4D8B127C08126D828AD72A12398F /* SapporoDelegate.swift */; };
+		190F1CC760E162B016BA7023D70FBEEE /* SAFlowLayoutSupplementaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E4DFE92500E393FCCA24E94664C04 /* SAFlowLayoutSupplementaryViewModel.swift */; };
+		2EA027B5D81F08731A8ADDCF1F3B08FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		2ED3E100D2504D3ADFBA52267E959A18 /* SACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F9414F2CD6B263A37BE3391646CF /* SACell.swift */; };
+		3A07511462FBBF1AEC1D9EAD60DDAB06 /* Sapporo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D782B9AB1C2C527AD2E30715FAFCC62 /* Sapporo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B81A3746928A69754DC209FDED745B7 /* SALayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE16A4777747CDA33997D7F48F8BF /* SALayout.swift */; };
+		658ED30B240FFBB2661FEB0FE8AF9068 /* Sapporo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD786CA45F33E5DE7734A0BDDE23756 /* Sapporo.swift */; };
+		8CD0FBC5B73CD58D98D5D160F48F4888 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		901C3763C35D2AC9D2129821C0786E5F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759F7E52D26712A258E1B89905C2A41 /* Common.swift */; };
+		A7D164FA78B956F74F6930F87977DD70 /* SAFlowLayoutSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4779080473448449F600AAE549DC18A /* SAFlowLayoutSupplementaryView.swift */; };
+		A803BBA3AD07FD80E885D65447AB6100 /* UICollectionReusableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7B56D988A45011261B362A79AD0C9 /* UICollectionReusableViewExt.swift */; };
+		B0C303800AA7CB182C76FEB1B4D6DDFC /* SABumpTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE546DB29CF8AC31556D393941970C2E /* SABumpTracker.swift */; };
+		B64866BB9A686CC1D596707F6B91FC52 /* UICollectionViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B46965AA2D523A8E6BB3093927FDBC /* UICollectionViewExt.swift */; };
+		B6ABC3B3E8610E54025FC2D0827D4503 /* Pods-Calendario Clases-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65272EDA1B308EC57912B12D214E6 /* Pods-Calendario Clases-dummy.m */; };
+		BAD208951C9A154331C42CACFA509B0F /* RangeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4989A396B415E18C6A9F233F13A2E /* RangeExt.swift */; };
+		C8C98E8E3D939E25CDA67E7D58A2D149 /* Sapporo+DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BC3512DEF9791882F9EF940EEB0F56 /* Sapporo+DelegateFlowLayout.swift */; };
+		CB5020C4FD151E54C5540004387CAF7E /* Sapporo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C76392A082CB2C20F5E4D10B318A4E9 /* Sapporo-dummy.m */; };
+		CC5B8817988884C09E047EB457AA0168 /* Sapporo+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7B02C7C412CFFA6D28E82BD6700A /* Sapporo+Delegate.swift */; };
+		F27C177CB34F0A0844CC861CB5FBB0F6 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758471C48073F6468775DA73430EB29 /* ArrayExt.swift */; };
+		FABE822354EC61B16909C6530DAADFEE /* SAFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8786838EC3EB7116AC49A96E5BD84A /* SAFlowLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A5268EE6EC9094D3CD3D2FCD776CEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD253137AE4B44D81730AC291CD2E27C;
+			remoteInfo = Sapporo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B90A33EBC2229038E858235B4893CB /* SACellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SACellModel.swift; path = Sapporo/SACellModel.swift; sourceTree = "<group>"; };
+		072AE16A4777747CDA33997D7F48F8BF /* SALayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SALayout.swift; path = Sapporo/SALayout.swift; sourceTree = "<group>"; };
+		0C76392A082CB2C20F5E4D10B318A4E9 /* Sapporo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sapporo-dummy.m"; sourceTree = "<group>"; };
+		108E50EBE5D3B7D41DCAA7DA7D0F8BFA /* Sapporo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sapporo-prefix.pch"; sourceTree = "<group>"; };
+		1D33CB278F0FF4216B6797AA5CFF71E2 /* Sapporo+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+DataSource.swift"; path = "Sapporo/Sapporo+DataSource.swift"; sourceTree = "<group>"; };
+		28B4989A396B415E18C6A9F233F13A2E /* RangeExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeExt.swift; path = Sapporo/RangeExt.swift; sourceTree = "<group>"; };
+		3922E4DDA2BB2696DC4AD25D23B8AA35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3E4DFE92500E393FCCA24E94664C04 /* SAFlowLayoutSupplementaryViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayoutSupplementaryViewModel.swift; path = Sapporo/SAFlowLayoutSupplementaryViewModel.swift; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4549F9414F2CD6B263A37BE3391646CF /* SACell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SACell.swift; path = Sapporo/SACell.swift; sourceTree = "<group>"; };
+		4D4680E5E339D0B506CDE2470CAA3E13 /* Pods-Calendario Clases-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calendario Clases-acknowledgements.markdown"; sourceTree = "<group>"; };
+		577D5A4DF71F755CCA0B93DD56DFE61E /* Pods-Calendario Clases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calendario Clases.debug.xcconfig"; sourceTree = "<group>"; };
+		582DCF532680B38D4ED389A0FE8214DF /* SASection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SASection.swift; path = Sapporo/SASection.swift; sourceTree = "<group>"; };
+		6601604D2606FF5CBDD19B936147355F /* Sapporo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sapporo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD786CA45F33E5DE7734A0BDDE23756 /* Sapporo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sapporo.swift; path = Sapporo/Sapporo.swift; sourceTree = "<group>"; };
+		6F18EB93B73C859ADCC33F295E01496B /* Pods-Calendario Clases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calendario Clases.release.xcconfig"; sourceTree = "<group>"; };
+		77E7B56D988A45011261B362A79AD0C9 /* UICollectionReusableViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionReusableViewExt.swift; path = Sapporo/UICollectionReusableViewExt.swift; sourceTree = "<group>"; };
+		79B46965AA2D523A8E6BB3093927FDBC /* UICollectionViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewExt.swift; path = Sapporo/UICollectionViewExt.swift; sourceTree = "<group>"; };
+		7CE65272EDA1B308EC57912B12D214E6 /* Pods-Calendario Clases-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calendario Clases-dummy.m"; sourceTree = "<group>"; };
+		7D782B9AB1C2C527AD2E30715FAFCC62 /* Sapporo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sapporo-umbrella.h"; sourceTree = "<group>"; };
+		8758471C48073F6468775DA73430EB29 /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sapporo/ArrayExt.swift; sourceTree = "<group>"; };
+		89AA4B6C8F6897DF41AEC9141CE2C12C /* Pods-Calendario Clases.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Calendario Clases.modulemap"; sourceTree = "<group>"; };
+		8FBAE2DE371A7C2B5AD7F81D5D21F363 /* Pods_Calendario_Clases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendario_Clases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		918531A160EA15EC95C8D8757B750ECF /* Pods-Calendario Clases-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calendario Clases-resources.sh"; sourceTree = "<group>"; };
+		9B1E7B02C7C412CFFA6D28E82BD6700A /* Sapporo+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+Delegate.swift"; path = "Sapporo/Sapporo+Delegate.swift"; sourceTree = "<group>"; };
+		A6C6913EB2E7CC9A8EEAD8F38EEE2C63 /* Pods-Calendario Clases-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calendario Clases-acknowledgements.plist"; sourceTree = "<group>"; };
+		A759F7E52D26712A258E1B89905C2A41 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Sapporo/Common.swift; sourceTree = "<group>"; };
+		AB6EA407C1D9CC67E20AA063AC8A63F2 /* Sapporo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sapporo.xcconfig; sourceTree = "<group>"; };
+		AF8786838EC3EB7116AC49A96E5BD84A /* SAFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayout.swift; path = Sapporo/SAFlowLayout.swift; sourceTree = "<group>"; };
+		B2EF4D8B127C08126D828AD72A12398F /* SapporoDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SapporoDelegate.swift; path = Sapporo/SapporoDelegate.swift; sourceTree = "<group>"; };
+		B4779080473448449F600AAE549DC18A /* SAFlowLayoutSupplementaryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayoutSupplementaryView.swift; path = Sapporo/SAFlowLayoutSupplementaryView.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFE5DA62AE4F6E61FA17D5C59568E767 /* Pods-Calendario Clases-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calendario Clases-frameworks.sh"; sourceTree = "<group>"; };
+		C1300340120D83D4A25C2DA8FBACA098 /* Pods-Calendario Clases-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calendario Clases-umbrella.h"; sourceTree = "<group>"; };
+		C5BC3512DEF9791882F9EF940EEB0F56 /* Sapporo+DelegateFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+DelegateFlowLayout.swift"; path = "Sapporo/Sapporo+DelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		CE546DB29CF8AC31556D393941970C2E /* SABumpTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SABumpTracker.swift; path = Sapporo/SABumpTracker.swift; sourceTree = "<group>"; };
+		D58E6334FDE76973BDB59752BBEBDE96 /* Sapporo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Sapporo.modulemap; sourceTree = "<group>"; };
+		E94CCC5FA064EDDE30025EEE19906EF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F56E5F53BC352ABC231CCBC63295E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA027B5D81F08731A8ADDCF1F3B08FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920D5E09BD7D96B1CC9E4E1C059A6A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD0FBC5B73CD58D98D5D160F48F4888 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FB385682BFE83A9B417AA1BDE0F2922 /* Sapporo */ = {
+			isa = PBXGroup;
+			children = (
+				8758471C48073F6468775DA73430EB29 /* ArrayExt.swift */,
+				A759F7E52D26712A258E1B89905C2A41 /* Common.swift */,
+				28B4989A396B415E18C6A9F233F13A2E /* RangeExt.swift */,
+				CE546DB29CF8AC31556D393941970C2E /* SABumpTracker.swift */,
+				4549F9414F2CD6B263A37BE3391646CF /* SACell.swift */,
+				03B90A33EBC2229038E858235B4893CB /* SACellModel.swift */,
+				AF8786838EC3EB7116AC49A96E5BD84A /* SAFlowLayout.swift */,
+				B4779080473448449F600AAE549DC18A /* SAFlowLayoutSupplementaryView.swift */,
+				3C3E4DFE92500E393FCCA24E94664C04 /* SAFlowLayoutSupplementaryViewModel.swift */,
+				072AE16A4777747CDA33997D7F48F8BF /* SALayout.swift */,
+				6DD786CA45F33E5DE7734A0BDDE23756 /* Sapporo.swift */,
+				1D33CB278F0FF4216B6797AA5CFF71E2 /* Sapporo+DataSource.swift */,
+				9B1E7B02C7C412CFFA6D28E82BD6700A /* Sapporo+Delegate.swift */,
+				C5BC3512DEF9791882F9EF940EEB0F56 /* Sapporo+DelegateFlowLayout.swift */,
+				B2EF4D8B127C08126D828AD72A12398F /* SapporoDelegate.swift */,
+				582DCF532680B38D4ED389A0FE8214DF /* SASection.swift */,
+				77E7B56D988A45011261B362A79AD0C9 /* UICollectionReusableViewExt.swift */,
+				79B46965AA2D523A8E6BB3093927FDBC /* UICollectionViewExt.swift */,
+				78E3D826781DF24CD7FCBB7BDA1B62DB /* Support Files */,
+			);
+			path = Sapporo;
+			sourceTree = "<group>";
+		};
+		137B702392314381622ABBFC5DCC576D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FB385682BFE83A9B417AA1BDE0F2922 /* Sapporo */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B1EA78E33A8C9DB50C0397B0C25EFAA /* Pods-Calendario Clases */ = {
+			isa = PBXGroup;
+			children = (
+				E94CCC5FA064EDDE30025EEE19906EF0 /* Info.plist */,
+				89AA4B6C8F6897DF41AEC9141CE2C12C /* Pods-Calendario Clases.modulemap */,
+				4D4680E5E339D0B506CDE2470CAA3E13 /* Pods-Calendario Clases-acknowledgements.markdown */,
+				A6C6913EB2E7CC9A8EEAD8F38EEE2C63 /* Pods-Calendario Clases-acknowledgements.plist */,
+				7CE65272EDA1B308EC57912B12D214E6 /* Pods-Calendario Clases-dummy.m */,
+				BFE5DA62AE4F6E61FA17D5C59568E767 /* Pods-Calendario Clases-frameworks.sh */,
+				918531A160EA15EC95C8D8757B750ECF /* Pods-Calendario Clases-resources.sh */,
+				C1300340120D83D4A25C2DA8FBACA098 /* Pods-Calendario Clases-umbrella.h */,
+				577D5A4DF71F755CCA0B93DD56DFE61E /* Pods-Calendario Clases.debug.xcconfig */,
+				6F18EB93B73C859ADCC33F295E01496B /* Pods-Calendario Clases.release.xcconfig */,
+			);
+			name = "Pods-Calendario Clases";
+			path = "Target Support Files/Pods-Calendario Clases";
+			sourceTree = "<group>";
+		};
+		78E3D826781DF24CD7FCBB7BDA1B62DB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3922E4DDA2BB2696DC4AD25D23B8AA35 /* Info.plist */,
+				D58E6334FDE76973BDB59752BBEBDE96 /* Sapporo.modulemap */,
+				AB6EA407C1D9CC67E20AA063AC8A63F2 /* Sapporo.xcconfig */,
+				0C76392A082CB2C20F5E4D10B318A4E9 /* Sapporo-dummy.m */,
+				108E50EBE5D3B7D41DCAA7DA7D0F8BFA /* Sapporo-prefix.pch */,
+				7D782B9AB1C2C527AD2E30715FAFCC62 /* Sapporo-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Sapporo";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				137B702392314381622ABBFC5DCC576D /* Pods */,
+				9F166F3A07B131AA9B446D8EC942BB98 /* Products */,
+				E4217A4784ACCD35A7D13DC9F9453D4B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9F166F3A07B131AA9B446D8EC942BB98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FBAE2DE371A7C2B5AD7F81D5D21F363 /* Pods_Calendario_Clases.framework */,
+				6601604D2606FF5CBDD19B936147355F /* Sapporo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E4217A4784ACCD35A7D13DC9F9453D4B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B1EA78E33A8C9DB50C0397B0C25EFAA /* Pods-Calendario Clases */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		522462117E05366E944428B66752E947 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01723F37F41C82B74312C036B17BB423 /* Pods-Calendario Clases-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BD9B44410393B577E312D3FB3BAF5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A07511462FBBF1AEC1D9EAD60DDAB06 /* Sapporo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD253137AE4B44D81730AC291CD2E27C /* Sapporo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F877CED9296D30673F2F17849FF233C /* Build configuration list for PBXNativeTarget "Sapporo" */;
+			buildPhases = (
+				FEC45AB06265769CBFB986149A456A14 /* Sources */,
+				7F56E5F53BC352ABC231CCBC63295E01 /* Frameworks */,
+				70BD9B44410393B577E312D3FB3BAF5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sapporo;
+			productName = Sapporo;
+			productReference = 6601604D2606FF5CBDD19B936147355F /* Sapporo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD316BE924F8D5C03BF2C9122EE8F8A8 /* Pods-Calendario Clases */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33841CE5EAD2F43580DC63DA852FDE39 /* Build configuration list for PBXNativeTarget "Pods-Calendario Clases" */;
+			buildPhases = (
+				7F9A89DE13F2220E075D8F98425D20B8 /* Sources */,
+				C920D5E09BD7D96B1CC9E4E1C059A6A3 /* Frameworks */,
+				522462117E05366E944428B66752E947 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B87DB6794DC0C42451E487134A73FBF /* PBXTargetDependency */,
+			);
+			name = "Pods-Calendario Clases";
+			productName = "Pods-Calendario Clases";
+			productReference = 8FBAE2DE371A7C2B5AD7F81D5D21F363 /* Pods_Calendario_Clases.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9F166F3A07B131AA9B446D8EC942BB98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD316BE924F8D5C03BF2C9122EE8F8A8 /* Pods-Calendario Clases */,
+				CD253137AE4B44D81730AC291CD2E27C /* Sapporo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F9A89DE13F2220E075D8F98425D20B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6ABC3B3E8610E54025FC2D0827D4503 /* Pods-Calendario Clases-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC45AB06265769CBFB986149A456A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27C177CB34F0A0844CC861CB5FBB0F6 /* ArrayExt.swift in Sources */,
+				901C3763C35D2AC9D2129821C0786E5F /* Common.swift in Sources */,
+				BAD208951C9A154331C42CACFA509B0F /* RangeExt.swift in Sources */,
+				B0C303800AA7CB182C76FEB1B4D6DDFC /* SABumpTracker.swift in Sources */,
+				2ED3E100D2504D3ADFBA52267E959A18 /* SACell.swift in Sources */,
+				0317876DB9B8E4EF8A1764FA9E43FA38 /* SACellModel.swift in Sources */,
+				FABE822354EC61B16909C6530DAADFEE /* SAFlowLayout.swift in Sources */,
+				A7D164FA78B956F74F6930F87977DD70 /* SAFlowLayoutSupplementaryView.swift in Sources */,
+				190F1CC760E162B016BA7023D70FBEEE /* SAFlowLayoutSupplementaryViewModel.swift in Sources */,
+				5B81A3746928A69754DC209FDED745B7 /* SALayout.swift in Sources */,
+				029B6B3D7628DAC97543649CD851AF97 /* Sapporo+DataSource.swift in Sources */,
+				CC5B8817988884C09E047EB457AA0168 /* Sapporo+Delegate.swift in Sources */,
+				C8C98E8E3D939E25CDA67E7D58A2D149 /* Sapporo+DelegateFlowLayout.swift in Sources */,
+				CB5020C4FD151E54C5540004387CAF7E /* Sapporo-dummy.m in Sources */,
+				658ED30B240FFBB2661FEB0FE8AF9068 /* Sapporo.swift in Sources */,
+				145438F1CB658C41E162F145193B5C2B /* SapporoDelegate.swift in Sources */,
+				049E9D0F995E353E557443EDD307E5BD /* SASection.swift in Sources */,
+				A803BBA3AD07FD80E885D65447AB6100 /* UICollectionReusableViewExt.swift in Sources */,
+				B64866BB9A686CC1D596707F6B91FC52 /* UICollectionViewExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B87DB6794DC0C42451E487134A73FBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sapporo;
+			target = CD253137AE4B44D81730AC291CD2E27C /* Sapporo */;
+			targetProxy = 6A5268EE6EC9094D3CD3D2FCD776CEE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		460B55DFDC8B055DF12637A9B66C5793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577D5A4DF71F755CCA0B93DD56DFE61E /* Pods-Calendario Clases.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Calendario Clases/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calendario Clases/Pods-Calendario Clases.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Calendario_Clases;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86D9152ECCE22FB1AC7A803955C6E5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EA407C1D9CC67E20AA063AC8A63F2 /* Sapporo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Sapporo/Sapporo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sapporo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sapporo/Sapporo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Sapporo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CA2CAF7432DB2F76B9A1D61065AEE00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F18EB93B73C859ADCC33F295E01496B /* Pods-Calendario Clases.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Calendario Clases/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calendario Clases/Pods-Calendario Clases.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Calendario_Clases;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8AA2C9F8609B3988C7C65A7AFDEC9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EA407C1D9CC67E20AA063AC8A63F2 /* Sapporo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Sapporo/Sapporo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sapporo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sapporo/Sapporo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Sapporo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F877CED9296D30673F2F17849FF233C /* Build configuration list for PBXNativeTarget "Sapporo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D9152ECCE22FB1AC7A803955C6E5E3 /* Debug */,
+				F8AA2C9F8609B3988C7C65A7AFDEC9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33841CE5EAD2F43580DC63DA852FDE39 /* Build configuration list for PBXNativeTarget "Pods-Calendario Clases" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460B55DFDC8B055DF12637A9B66C5793 /* Debug */,
+				CA2CAF7432DB2F76B9A1D61065AEE00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

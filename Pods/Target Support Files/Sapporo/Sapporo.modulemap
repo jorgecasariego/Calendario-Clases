@@ -1,0 +1,6 @@
+framework module Sapporo {
+  umbrella header "Sapporo-umbrella.h"
+
+  export *
+  module * { export * }
+}
